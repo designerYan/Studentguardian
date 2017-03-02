@@ -1,0 +1,328 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+    color: #F97F0C;
+}
+
+
+#heading{
+    width:100%;
+    height: 7vh;
+}
+#setting{
+    float: right;
+    padding: 2px;
+    width: 11vw;
+    height: 6vh;
+}
+#pagename{
+    font-size:21pt;
+    text-align: center;
+    padding: 2%;
+    color: #F97F0C;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+#hamburgerMenuIcon{
+    float: left;
+    padding: 2px;
+    width: 11vw;
+    height: 6vh;
+}
+
+.links { 
+    background-color: #FFFFFF;
+    width: 60vw;
+    font-size: 38pt;
+    color:#FFA100;
+    position: relative;
+    text-decoration: none;
+    height: 20px;
+}
+.listContainer {
+    display: none;
+    float: left;
+    clear: left;
+    list-style: none;
+}
+
+.menutitle {
+    margin-top: -30px;
+    font-size:19pt;
+    margin-left:90px;
+}
+
+#menutitle2 {
+    margin-top: -50px;
+    margin-left:90px;
+    font-size:16pt;
+}
+
+
+#display{
+    width:60vw;
+    height: 12vh;
+    font-size:31pt;
+    color:white;
+    background-color: #FDE861;
+    text-align: center;
+    position:relative;
+    border: 10px solid #FDE861;
+    
+}
+
+.listContainer li {
+    height: 11vh;
+    background-color: #FFFFFF;
+    border: 10px solid #FDE861;
+    width:60vw
+    
+}
+
+.listContainer a {
+    background-color: #FFFFFF;
+    width: 50px;
+    float:left;
+}
+.listContainer img {
+   position:relative;
+   width:45px;
+   left:20px;
+   top:10px;    
+}
+
+#hamburgerMenuIcon {
+    position: relative;
+    float: left;
+}
+#tooltip {
+    position: absolute;
+    top:20px;
+    left: 50px;
+    background-color: grey;
+    opacity: 0.6;
+    color: white;
+    border-radius: 4px;
+    font-size: 1em;
+    display: none;
+}
+#calendar {
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    width: 95vw;
+    margin-top: 12vh;
+    z-index: -1;
+    padding: 0;
+    font-size: 10pt; 
+    height: 160vh;
+	}
+
+
+#title{
+    font-size: 21pt;
+    text-align: center;
+}
+
+#info{
+    font-size: 18pt;
+    text-align: center;
+    width:80%;
+    height:10%;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 3px dashed #F97F0C;
+    font-size: 18px;
+}
+
+#add{
+    position: fixed;
+    bottom: 1vh;
+    right: 6vw;
+}
+
+#inpDiv{
+    position: absolute;
+    margin-left: 6.5%;
+    margin-top: 6vh;
+    width: 85%;
+    height: 76vh;
+    z-index: 1;
+    background-color:lightgoldenrodyellow;
+    border: 3px dashed #FDE861;
+    text-align: center;
+}
+
+#titleNAme{
+    float: left;
+    width: 120px;
+}
+
+#titleinp{
+    float: right;
+    width:150px;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 1.5em;
+    font-size: 12pt;
+}
+
+#mydiv{
+    width:100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#mydiv1{
+    width:100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#startTime{
+    float: left;
+    width: 100px;
+    margin-left: 4%;
+}
+
+#starinp{
+    float: right;
+    width:150px;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 1.5em;
+    font-size: 12pt;
+}
+
+#startdate{
+    float: left;
+    width: 100px;
+    margin-left: 4%;
+}
+
+#mydiv2{
+    width:100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#starinp2{
+    float: right;
+    width:150px;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 1.5em;
+    font-size: 12pt;
+}
+
+#mydiv3{
+    width:100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#endate{
+    float: left;
+    width: 100px;
+    margin-left: 3%;
+}
+
+#myendinp{
+    float: right;
+    width:150px;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 1.5em;
+    font-size: 12pt;
+}
+
+#mydiv4{
+    width:100%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5%;
+}
+
+#endime{
+    float: left;
+    width: 100px;
+    margin-left: 3%;
+}
+
+#myendinp2{
+    float: right;
+    width:150px;
+    margin-top: 5%;
+    margin-right: 5%;
+    height: 1.5em;
+    font-size: 12pt;
+}
+
+#myButton{
+    float: right;
+    width:35%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10%;
+    background-color: #F97F0C;
+    color: white;
+    font-size: 18pt;
+}
+
+#myButton2{
+    float: left;
+    width:35%;
+    height: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 10%;
+    background-color: #F97F0C;
+    color: white;
+    font-size: 18pt;
+}
+
+#userimg{
+    width:60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-left: -5vw;
+    float: left;
+    border: 2px solid #F97F0C;
+}
+
+#greeting{
+    width:150px;
+    height: 60px;
+    margin-top: 5vh;
+    font-size:0.5em;
+    color: #F97F0C;
+    float: right;
+}
+#donotMove {
+    position: relative;
+    margin-top: -9vh;
+    
+}

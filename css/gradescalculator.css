@@ -1,0 +1,279 @@
+body{
+    background: url("../img/background-img.png") ;
+    background-repeat:no-repeat;
+    background-position:34px 150px;
+    background-repeat: no-repeat;
+    background-size:300px;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+.delBut{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float:left;
+
+}
+#addDiv{
+    width: 100%;
+    height: 42vh;
+    z-index: 1;
+    margin-top:25%;
+    background-color:lightgoldenrodyellow;
+    border: 1px solid #FDE861;
+    text-align: center;
+    display:none;
+    position:absolute;
+}
+#addClass {
+    float: right;
+    width: 35%;
+    height: 15%;
+    display: block;
+    background-color: #F97F0C;
+    color: white;
+    font-size: 18pt;
+}
+#exit {
+    float: left;
+    width: 35%;
+    height: 15%;
+    background-color: #F97F0C;
+    color: white;
+    font-size: 18pt;
+    bottom: 0px;
+}
+#reportcard1{
+    width:100%;
+    background-color:#F4EFF6;
+}
+#tableTitle{
+    text-align: center;
+    padding: 8px;
+    width:100%;
+    background-color:#F4EFF6;
+    z-index: -1;
+    position:relative;
+}
+td{
+    text-align: center;
+    padding: 8px;
+    width:50%;
+}
+#classTitle{
+    text-align: center;
+}
+#average{
+    bottom:15vh;
+    left:12vw;
+    position:fixed;
+    width:75vw;
+    height:10vh;
+    font-size:25px;
+    background-color:#F4EFF6;
+    z-index: -1;
+    
+}
+#avgText{
+    text-align: center;
+    margin-top:7%;
+    display:block;
+    position:relative;
+}
+
+#classGrade, #className {
+    width:40vw;
+    height:5vh;
+    text-align:center;
+    
+}
+#calculator{
+    left:12vw;
+    width:75vw;
+    height:auto;
+    margin:0 auto;
+    z-index: -1;
+    position:fixed;
+}
+#heading{
+    width:100%;
+    height: 7vh;
+}
+#setting{
+    
+    float: right;
+    padding: 2px;
+    width: 11vw;
+    height: 6vh;
+}
+#pagename{
+    font-size:21pt;
+    text-align: center;
+    padding: 2%;
+    color: #F97F0C;
+    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+#hamburgerMenuIcon{
+    float: left;
+    padding: 2px;
+    width: 11vw;
+    height: 6vh;
+}
+
+.links { 
+    background-color: #FFFFFF;
+    width: 60vw;
+    font-size: 38pt;
+    color:#FFA100;
+    position: relative;
+    text-decoration: none;
+    height: 20px;
+}
+.listContainer {
+    display: none;
+    float: left;
+    clear: left;
+    list-style: none;
+}
+
+.menutitle {
+    margin-top: -30px;
+    font-size:19pt;
+    margin-left:90px;
+}
+
+#menutitle2 {
+    margin-top: -50px;
+    margin-left:90px;
+    font-size:16pt;
+    color: #F97F0C;
+}
+
+
+#display{
+    width:60vw;
+    height: 12vh;
+    font-size:31pt;
+    color:white;
+    background-color: #FDE861;
+    text-align: center;
+    position:relative;
+    border: 10px solid #FDE861;
+    
+}
+
+.listContainer li {
+    height: 11vh;
+    background-color: #FFFFFF;
+    border: 10px solid #FDE861;
+    width:60vw
+    
+}
+
+.listContainer a {
+    background-color: #FFFFFF;
+    width: 50px;
+    float:left;
+}
+.listContainer img {
+   position:relative;
+   width:45px;
+   left:20px;
+   top:10px;    
+}
+
+#hamburgerMenuIcon {
+    position: relative;
+    float: left;
+}
+#tooltip {
+    position: absolute;
+    top:20px;
+    left: 50px;
+    background-color: grey;
+    opacity: 0.6;
+    color: white;
+    border-radius: 4px;
+    font-size: 1em;
+    display: none;
+}
+
+#list{
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    width: 80vw;
+    height:40vh;
+    margin-top: 10vh;
+    z-index: -1;
+}
+
+#title{
+    font-size: 24pt;
+    margin: 2%;
+}
+
+#content{
+    font-size: 18pt;
+    margin-left: 10%;
+    margin-top: 1%;
+    color:#838383;
+}
+
+#add{
+    position: fixed;
+    right:6vw;
+    bottom:1vh;
+    margin: auto;
+   
+    z-index: -1;
+    
+
+  
+
+}
+
+#add1{
+    width:50%;
+    height:30%;
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    font-size: 21pt;
+    border: 3px dashed #F97F0C;
+    background-color: #FCEDAE;
+    color:#80B2F9;
+}
+
+#userimg{
+    width:60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-left: -5vw;
+    float: left;
+    border: 2px solid #F97F0C;
+}
+
+#greeting{
+    width:150px;
+    height: 60px;
+    margin-top: 1.7vh;
+    font-size:16pt;
+    color: #F97F0C;
+    float: right;
+}
+#donotMove {
+    position: relative;
+    margin-top: -8vh;
+    
+}
