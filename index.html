@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Student Guardian</title>
+        <link rel="icon" type="image/png" sizes="32x37" href="img/logo32X37.png"/>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="google-signin-client_id" content="357884399433-0p41d5gkf0rd9nnvm0is6sj722akck9u.apps.googleusercontent.com">
+        <link href="css/login.css" type="text/css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="">
+    </head>
+    
+    <script src="https://apis.google.com/js/platform.js" async defer gapi_processed="true"></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="js/Googlelogin.js"></script>
+    
+    <body>
+    <img src="img/logo.png" alt="logo" id="logo" />
+    
+    <div id="login">
+        <button id="signin">Sign in</button>
+        <button id="signup">Sign up</button>
+    </div>
+        
+    <form id="Login" action="./index.html">
+    <input type="text" id="name" required="true" autofocus="autofocus" oninput="checkName(this)" placeholder="User Name"/> 
+    <input type="email" id="email" placeholder="Email" required="true" oninput="checkEmail(this);"/>    
+    <input type="text" id="password" placeholder="Password" required="true" oninput="checkPassword(this);"/>
+    
+    <br/>
+    <input type="button" value="Register" id="log" disabled="true"/>
+    <br/><br/>
+    </form>   
+       
+    <br/><br/>
+    <div id="login2">
+    <img src="img/facebook.png" id="facebook" alt="facebook login logo"/>
+    <img src="img/google.png" id="google" alt="google login logo"/> 
+    </div>
+    </body>
+    <script>startApp();</script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    
+    <script src="js/facebook.js"></script>
+    
+    
+</html>

@@ -1,0 +1,68 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Reminder</title>
+<link rel="icon" type="image/png" sizes="32x37" href="img/logo32X37.png"/>
+<link rel="stylesheet" href="css/reminder.css">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height" />
+<meta charset='utf-8' />
+<link href='css/fullcalendar.css' rel='stylesheet' />
+<link href='css/fullcalendar.print.css' rel='stylesheet' media='print' />
+<script src='js/moment.min.js'></script>
+<script src='js/jquery.min.js'></script>
+<script src='js/fullcalendar.min.js'></script>
+
+</head>
+<body>
+     <div id="heading">
+        <a href="./setting.html"><img src="img/setting.png" id="setting" alt="setting button"/></a>
+    <div class="nav_bar">
+            <img src="img/hamburger.png" id="hamburgerMenuIcon" alt="hamburger button"/>
+            <div id="pagename">Reminder</div>
+            <div class="listContainer">
+             <div id="display">
+                <img id="userimg" />
+                <p id="greeting"></p>
+            </div>
+            <li><a class='links' href="./schedule-test.html">
+                <img src ="img/Calender.png" alt="calender_icon" />
+                <div class = "menutitle">Calender</div></a></li>
+            
+            <li><a class='links' href="./gradescalculator.html">
+                <img src ="img/grade_calculator.png" alt="calculator_icon"/>
+                <div id = "menutitle2">Grade Calculator</div></a></li>
+
+            <li><a class='links' href="./reminder.html">
+                <img src ="img/Reminder.png" alt="reminder_icon"/>
+                <div class = "menutitle">Reminder</div></a></li>
+            <li><a class='links' href="./googlemap.html">
+                <img src ="img/marker.png" alt="setting_icon" />
+                <div class = "menutitle" id="donotMove">Campus Map</div></a></li>
+            <li><a id="logout" class='links' href="#">
+                <img src ="img/logout.png" alt="logout_icon" />
+                <div class = "menutitle">Logout</div></a></li>
+            </div>
+           </div>   
+    </div>
+    <div id='tooltip'></div>
+    
+	<div id='calendar'></div>
+    
+    <img src="img/plus.png" alt="plus sign" id="add"/>
+</body>
+<script src="js/facebook.js"></script>
+<script src="js/schedule.js"></script>
+ <script src="js/reminder.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/HamburgerMenu.js"></script>
+    <script>
+    $.noConflict();
+    jQuery(document).ready(function(){
+        jQuery('#hamburgerMenuIcon').hamburgerMenu({position:'left',msg:'Menu'});
+});
+    </script>
+</html>
+
+
+
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Schedule</title>
+    <link rel="icon" type="image/png" sizes="32x37" href="img/logo32X37.png"/>
+    <meta name="viewport" content="width=375" />
+    <link rel="stylesheet" href="css/schedule.css">
+    <link rel="stylesheet" href="css/schedule2.css">
+    <meta name="google-signin-client_id" content="357884399433-0p41d5gkf0rd9nnvm0is6sj722akck9u.apps.googleusercontent.com">
+    <meta charset="utf-8"/>
+</head>
+
+    <script src="https://apis.google.com/js/platform.js" async defer gapi_processed="true"></script>
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="js/Googlelogin.js"></script>
+
+<body>
+    
+    <div id="heading">
+        <a href="./setting.html"><img src="img/setting.png" id="setting" alt="setting button"/></a>
+    <div class="nav_bar">
+            <img src="img/hamburger.png" id="hamburgerMenuIcon" alt="hamburger button"/>
+            <div id="pagename">Schedule</div>
+            <div class="listContainer">
+             <div id="display">
+                <img id="userimg" />
+                <p id="greeting"></p>
+            </div>
+            <li><a class='links' href="./schedule-test.html">
+                <img src ="img/Calender.png" alt="calender_icon" />
+                <div class = "menutitle">Calender</div></a></li>
+            
+            <li><a class='links' href="./gradescalculator.html">
+                <img src ="img/grade_calculator.png" alt="calculator_icon"/>
+                <div id = "menutitle2">Grade Calculator</div></a></li>
+
+            <li><a class='links' href="./reminder.html">
+                <img src ="img/Reminder.png" alt="reminder_icon"/>
+                <div class = "menutitle">Reminder</div></a></li>
+            <li><a class='links' href="./googlemap.html">
+                <img src ="img/marker.png" alt="setting_icon" />
+                <div class = "menutitle" id="donotMove">Campus Map</div></a></li>
+            <li><a id="logout" class='links' href="#">
+                <img src ="img/logout.png" alt="logout_icon" />
+                <div class = "menutitle">Logout</div></a></li>
+            </div>
+           </div>   
+    </div>
+    <!--tooltip-->
+    <div id='tooltip'></div>
+    
+    <div id='calendar'></div>
+	<div id="event_edit_container">
+        
+		<form>
+			<input type="hidden" />
+			<ul>
+				<li>
+					<span>Date: </span><span class="date_holder"></span> 
+				</li>
+				<li>
+					<label for="start">Start Time: </label><select name="start"><option value="">Select Start Time</option></select>
+				</li>
+				<li>
+					<label for="end">End Time: </label><select name="end"><option value="">Select End Time</option></select>
+				</li>
+				<li>
+					<label for="title">Classname: </label><input type="text" name="title" />
+				</li>
+				<li>
+					<label for="instructor">Instructor: </label><input name="instructor"/>
+				</li>
+                <li>
+                    <label style="float:left" for="location">Location: </label><div id="showmap"><a href="./googlemap.html" id="link">Get direction <img src="img/GoogleMaps.png" style="width:40px; height:auto;"/></a></div><input name="location"/>
+				</li>
+                <li>
+					<label for="type">Class type: </label><input name="type"/>
+				</li>
+			</ul>
+		</form>
+	</div>
+  
+   <script src="js/facebook.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+     <script src="js/schedule.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js'></script>
+    <script type='text/javascript' src='js/jquery.weekcalendar.js'></script>
+	<script type='text/javascript' src='js/calendar.js'></script>  
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/HamburgerMenu.js"></script>
+    <script>
+    $.noConflict();
+    jQuery(document).ready(function(){
+        jQuery('#hamburgerMenuIcon').hamburgerMenu({position:'left',msg:'Menu'});
+});
+    </script>
+     
+    
+</body>
+</html>

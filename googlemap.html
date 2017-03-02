@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Direction</title>
+    <link rel="icon" type="image/png" sizes="32x37" href="img/logo32X37.png"/>
+    <link rel="stylesheet" href="css/googlemap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="google-signin-client_id" content="357884399433-0p41d5gkf0rd9nnvm0is6sj722akck9u.apps.googleusercontent.com">
+     <link rel='stylesheet' type='text/css' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/start/jquery-ui.css' />
+</head>
+<body>
+    
+    <div id="heading">
+        <a href="./setting.html"><img src="img/setting.png" id="setting" alt="setting button"/></a>
+    <div class="nav_bar">
+            <img src="img/hamburger.png" id="hamburgerMenuIcon" alt="hamburger button"/>
+            <div id="pagename">Campus map</div>
+            <div class="listContainer">
+             <div id="display">
+                <img id="userimg" src="img/user-default.png"/>
+                <p id="greeting"><?php $_SESSION["username"] ?></p>
+            </div>
+            <li><a class='links' href="./schedule-test.html">
+                <img src ="img/Calender.png" alt="calender_icon" />
+                <div class = "menutitle">Calender</div></a></li>
+            
+            <li><a class='links' href="./gradescalculator.html">
+                <img src ="img/grade_calculator.png" alt="calculator_icon"/>
+                <div id = "menutitle2">Grade Calculator</div></a></li>
+
+            <li><a class='links' href="./reminder.html">
+                <img src ="img/Reminder.png" alt="reminder_icon"/>
+                <div class = "menutitle">Reminder</div></a></li>
+            <li><a class='links' href="./googlemap.html">
+                <img src ="img/marker.png" alt="setting_icon" />
+                <div class = "menutitle" id="donotMove">Campus Map</div></a></li>
+            <li><a id="logout" class='links' href="#">
+                <img src ="img/logout.png" alt="logout_icon" />
+                <div class = "menutitle">Logout</div></a></li>
+            </div>
+           </div>   
+    </div>
+    <div id='tooltip'></div>
+    
+    <div id="map"></div>
+    <div id="floating-panel">
+      <strong>Start:</strong>
+      <select id="start">
+        <option id="place" value="">Your location</option>  
+        <option value="49.251187, -123.003371">SW1</option>
+        <option value="49.250389, -123.003435">SW2</option>
+        <option value="49.250326, -123.002663">SW3</option> 
+        <option value="49.249710, -123.002524">SW5</option>  
+        <option value="49.251230, -123.001204">SE2</option>
+        <option value="49.250782, -123.001301">SE8</option>
+        <option value="49.249991, -123.001548">SE12</option>
+        <option value="49.249437, -123.000966">SE14</option> 
+        <option value="49.248533, -123.001170">SE16</option>  
+      </select>
+      <br>
+      <strong>End:</strong>
+      <select id="end">
+        <option value="49.251187, -123.003371">SW1</option>
+        <option value="49.250389, -123.003435">SW2</option>
+        <option value="49.250326, -123.002663">SW3</option> 
+        <option value="49.249710, -123.002524">SW5</option>  
+        <option value="49.251230, -123.001204">SE2</option>
+        <option value="49.250782, -123.001301">SE8</option>
+        <option value="49.249991, -123.001548">SE12</option>
+        <option value="49.249437, -123.000966">SE14</option> 
+        <option value="49.248533, -123.001170">SE16</option>  
+      </select>
+    </div>
+    
+    <div id="top-panel"></div>
+    <script src="js/calendar.js"></script>
+    <script src="js/facebook.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js'></script>
+    <script src="js/schedule.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/HamburgerMenu.js"></script>
+    <script>
+    $.noConflict();
+    jQuery(document).ready(function(){
+        jQuery('#hamburgerMenuIcon').hamburgerMenu({position:'left',msg:'Menu'});
+});
+    </script>
+
+    <script src="js/maps.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnlMGUDAQCfOAv-Hv7vFp6IIJ0hD1UwE&callback=initMap"
+    async defer></script>
+</body>
+</html>
