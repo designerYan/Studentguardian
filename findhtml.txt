@@ -1,8 +1,0 @@
-/Users/a00947730/Desktop/backup/git/takehomeexercise/css/index3.html
-/Users/a00947730/Desktop/backup/git/takehomeexercise/img/index2.html
-/Users/a00947730/Desktop/backup/git/takehomeexercise/index1.html
-/Users/a00947730/Desktop/backup/git/takehomeexercise/js/index1.html
-/Users/a00947730/Desktop/git/takehomeexercise/css/index3.html
-/Users/a00947730/Desktop/git/takehomeexercise/img/index2.html
-/Users/a00947730/Desktop/git/takehomeexercise/index1.html
-/Users/a00947730/Desktop/git/takehomeexercise/js/index1.html
